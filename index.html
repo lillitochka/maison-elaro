@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f5f0e7">
+  <meta name="description" content="MAISON ÉLORA — французская кондитерская. Авторские десерты, свежая выпечка и кофе.">
+  <title>MAISON ÉLORA — French Pâtisserie</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement">A LITTLE MOMENT OF LUXURY <span>✳</span> СВЕЖАЯ ВИПІЧКА КАЖДЫЙ ДЕНЬ</div>
+
+  <header class="header" id="top">
+    <a class="brand" href="#top" aria-label="MAISON ÉLORA — главная">
+      <span class="brand-name">MAISON ÉLORA</span>
+      <span class="brand-sub">FRENCH PÂTISSERIE</span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Відкрити меню" aria-expanded="false"><span></span><span></span></button>
+    <nav class="nav" id="nav">
+      <a href="#story">Наша історія</a>
+      <a href="#menu">Меню</a>
+      <a href="#atelier">Атмосфера</a>
+      <a href="#contacts">Контакти</a>
+    </nav>
+    <button class="cart-button" id="openCart" aria-label="Открыть корзину">КОШИК <span id="cartCount">0</span></button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">L'ART DE LA PÂTISSERIE · UZHHOROD</p>
+        <h1>Искусство<br>маленьких <em>удовольствий.</em></h1>
+        <p class="hero-text">Французька естетика, витончені смаки та десерти, створені, щоб уповільнити мить.</p>
+        <a class="button button-dark" href="#menu">ПЕРЕГЛЯНУТИ МЕНЮ <span>↗</span></a>
+        <div class="hero-note"><span class="note-line"></span> MADE WITH PATIENCE, SERVED WITH LOVE</div>
+      </div>
+      <div class="hero-visual reveal">
+        <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=1500&q=88" alt="Вишуканий десерт із кремом та ягодами">
+        <div class="image-label"><span>01 / 06</span><span>THE SIGNATURE COLLECTION</span></div>
+        <div class="hero-stamp">EST.<br><b>2024</b></div>
+      </div>
+      <div class="hero-bottom"><span>SCROLL TO DISCOVER</span><span>48°37' N&nbsp;&nbsp; 22°17' E</span></div>
+    </section>
+
+    <section class="intro section-pad reveal" id="story">
+      <p class="eyebrow">BIENVENUE CHEZ NOUS</p>
+      <div class="intro-grid">
+        <h2>Краса —<br>у <em>простих</em><br>речах.</h2>
+        <div class="intro-copy">
+          <p>MAISON ÉLORA — місце, де класичні французькі рецепти поєднуються із сучасним поглядом на смак.</p>
+          <p>Ми віримо, що хороший десерт — це більше, ніж солодощі. Це пауза серед метушні, розмова за горнятком кави та спогад, до якого хочеться повернутися.</p>
+          <a class="text-link" href="#atelier">ВІДЧУТИ АТМОСФЕРУ <span>↗</span></a>
+        </div>
+      </div>
+      <div class="intro-image">
+        <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=1800&q=85" alt="Свіжі французькі круасани">
+        <span>FRESHLY BAKED, EVERY MORNING</span>
+      </div>
+    </section>
+
+    <section class="menu-section section-pad" id="menu">
+      <div class="section-heading reveal">
+        <div><p class="eyebrow">A TASTE OF ELEGANCE</p><h2>Наше <em>меню.</em></h2></div>
+        <p>Щодня — маленька колекція<br>великих задоволень.</p>
+      </div>
+      <div class="filters reveal" role="group" aria-label="Фильтр меню">
+        <button class="filter active" data-filter="all">УСЕ</button>
+        <button class="filter" data-filter="pastry">ВИПІЧКА</button>
+        <button class="filter" data-filter="dessert">ДЕСЕРТИ</button>
+        <button class="filter" data-filter="drinks">НАПОЇ</button>
+      </div>
+      <div class="products" id="products">
+        <article class="product-card reveal" data-category="pastry" data-id="croissant" data-name="Класичний круасан" data-price="115">
+          <div class="product-photo"><img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=900&q=85" alt="Круасан"><span class="product-tag">BESTSELLER</span><button class="add-button" aria-label="Добавить круассан">+</button></div>
+          <div class="product-info"><div><h3>Класичний круасан</h3><p>Листкове тісто, вершкове масло</p></div><strong>115 ₴</strong></div>
+        </article>
+        <article class="product-card reveal" data-category="dessert" data-id="tart" data-name="Тарт із ягодами" data-price="185">
+          <div class="product-photo"><img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=900&q=85" alt="Ягідний десерт"><button class="add-button" aria-label="Добавить тарт">+</button></div>
+          <div class="product-info"><div><h3>Тарт із ягодами</h3><p>Ванільний крем, сезонні ягоди</p></div><strong>185 ₴</strong></div>
+        </article>
+        <article class="product-card reveal" data-category="dessert" data-id="choux" data-name="Шу з ваніллю" data-price="145">
+          <div class="product-photo"><img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=85" alt="Ніжний десерт"><span class="product-tag">CHEF'S CHOICE</span><button class="add-button" aria-label="Добавить шу">+</button></div>
+          <div class="product-info"><div><h3>Шу з ваніллю</h3><p>Заварне тісто, ванільний крем</p></div><strong>145 ₴</strong></div>
+        </article>
+        <article class="product-card reveal" data-category="pastry" data-id="pain" data-name="Пан-о-шоколя" data-price="135">
+          <div class="product-photo"><img src="https://images.unsplash.com/photo-1608198093002-ad4e005484e9?auto=format&fit=crop&w=900&q=85" alt="Шоколадна випічка"><button class="add-button" aria-label="Добавить пэн о шоколя">+</button></div>
+          <div class="product-info"><div><h3>Пан-о-шоколя</h3><p>Листкова випічка, чорний шоколад</p></div><strong>135 ₴</strong></div>
+        </article>
+        <article class="product-card reveal" data-category="drinks" data-id="latte" data-name="Ванільне лате" data-price="110">
+          <div class="product-photo"><img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=900&q=85" alt="Кава лате"><button class="add-button" aria-label="Добавить латте">+</button></div>
+          <div class="product-info"><div><h3>Ванільне лате</h3><p>Еспресо, молоко, ваніль</p></div><strong>110 ₴</strong></div>
+        </article>
+        <article class="product-card reveal" data-category="drinks" data-id="matcha" data-name="Матча-лате" data-price="145">
+          <div class="product-photo"><img src="https://images.unsplash.com/photo-1515823064-d6e0c04616a7?auto=format&fit=crop&w=900&q=85" alt="Матча-лате"><button class="add-button" aria-label="Добавить матча латте">+</button></div>
+          <div class="product-info"><div><h3>Матча-лате</h3><p>Японська матча, ніжне молоко</p></div><strong>145 ₴</strong></div>
+        </article>
+      </div>
+      <p class="menu-footnote">* Меню та ціни наведені для демонстраційного проєкту.</p>
+    </section>
+
+    <section class="quote-band">
+      <p class="eyebrow">NOT JUST A DESSERT</p>
+      <h2>“La vie est belle<br>avec un <em>dessert.</em>”</h2>
+      <span>ЖИТТЯ ПРЕКРАСНІШЕ З ДЕСЕРТОМ</span>
+    </section>
+
+    <section class="atelier section-pad" id="atelier">
+      <div class="section-heading reveal">
+        <div><p class="eyebrow">THE MAISON EXPERIENCE</p><h2>Місце для <em>себе.</em></h2></div>
+        <p>Тепле світло, аромат свіжої випічки<br>та час, що належить саме вам.</p>
+      </div>
+      <div class="atelier-grid reveal">
+        <img class="atelier-large" src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1300&q=85" alt="Затишний інтер’єр кав’ярні">
+        <div class="atelier-side"><img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=900&q=85" alt="Кав’ярня"><p>UN MOMENT POUR VOUS</p><span>Ваша маленька паризька мить — у самому серці міста.</span></div>
+      </div>
+    </section>
+
+    <section class="order-section section-pad" id="order">
+      <div class="order-image reveal"><img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=1200&q=85" alt="Святковий торт"></div>
+      <div class="order-copy reveal"><p class="eyebrow">MADE FOR YOUR MOMENT</p><h2>Особлива нагода.<br><em>Особливий торт.</em></h2><p>Створимо десерт, який стане частиною вашого свята. Розкажіть нам про свою ідею — обговоримо деталі разом.</p><a href="#contacts" class="button button-dark">ОБГОВОРИТИ ЗАМОВЛЕННЯ <span>↗</span></a></div>
+    </section>
+
+    <section class="visit section-pad" id="contacts">
+      <div class="visit-title reveal"><p class="eyebrow">WE'LL SAVE YOU A SEAT</p><h2>До зустрічі<br>в <em>ÉLORA.</em></h2></div>
+      <div class="visit-details reveal">
+        <div><span class="detail-label">АДРЕС</span><p>Ужгород, вул. Корзо, 12<br><small>* Демонстраційна адреса</small></p></div>
+        <div><span class="detail-label">ГОДИНИ РОБОТИ</span><p>Пн — Нд<br>09:00 — 20:00</p></div>
+        <div><span class="detail-label">ЗВ’ЯЗАТИСЯ</span><p>hello@maisonelora.demo<br>@maison.elora</p></div>
+        <a class="text-link" href="mailto:hello@maisonelora.demo">НАПИСАТИ НАМ <span>↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="brand footer-brand" href="#top"><span class="brand-name">MAISON ÉLORA</span><span class="brand-sub">FRENCH PÂTISSERIE</span></a>
+    <span>© 2026 MAISON ÉLORA. DEMO PROJECT BY KVISITE.</span>
+    <a href="#top">УГОРУ ↑</a>
+  </footer>
+
+  <div class="cart-overlay" id="cartOverlay" aria-hidden="true">
+    <div class="cart-panel" role="dialog" aria-modal="true" aria-labelledby="cartTitle">
+      <div class="cart-head"><div><p class="eyebrow">YOUR SELECTION</p><h2 id="cartTitle">Кошик</h2></div><button class="close-cart" id="closeCart" aria-label="Закрити">×</button></div>
+      <div class="cart-items" id="cartItems"><p class="empty-cart">Тут поки що порожньо.<br>Час обрати десерт.</p></div>
+      <div class="cart-bottom"><div class="total-row"><span>РАЗОМ</span><strong id="cartTotal">0 ₴</strong></div><button class="button button-dark checkout" id="checkout">ЗАЛИШИТИ ЗАЯВКУ <span>↗</span></button><p class="cart-note">Демонстраційний кошик — замовлення не надсилається.</p></div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status">Додано до кошика</div>
+  <script src="script.js"></script>
+</body>
+</html>
